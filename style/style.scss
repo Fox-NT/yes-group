@@ -88,6 +88,10 @@ body {
 
     &__link {
       color: #fff;
+      transition: 0.2s color;
+      &:hover {
+        color: #226DE5;
+      }
     }
   }
 
@@ -116,6 +120,12 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      a {
+        transition: 0.2s color;
+        &:hover {
+          color: #226DE5;
+        }
+      }
     }
 
     &__mobile {
@@ -151,11 +161,21 @@ body {
 
       a {
         color: rgba(255, 255, 255, 0.33);
+        transition: 0.2s color;
+        &:hover {
+          color: #43d854;
+        }
       }
     }
 
     &__viber {
       margin-right: 15px;
+      a {
+        &:hover {
+          color: #665CAC;
+          transition: 0.2s color;
+        }
+      }
     }
   }
 
@@ -168,6 +188,7 @@ body {
     height: 90px;
     position: relative;
     border-left: 1px solid rgba(255, 255, 255, 0.12);
+    cursor: pointer;
     &::before {
       position: absolute;
       content: '';
@@ -275,6 +296,9 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          &:hover {
+            background: linear-gradient(99.67deg, #164599 0%, #3668bb 98.59%);
+          }
           &::after {
             margin-left: 53px;
             content: '';
@@ -295,11 +319,23 @@ body {
       .slider__prev {
         order: 1;
         margin-right: 30px;
+        transition: .2s all;
+        cursor: pointer;
+
+        &:hover svg g path {
+          fill: #0B5FFF;
+        }
       }
 
       .slider__next {
         order: 3;
         margin-left: 25px;
+        transition: .2s all;
+        cursor: pointer;
+
+        &:hover svg g path {
+          fill: #0B5FFF;
+        }
       }
 
       .slider__counter {
@@ -2087,6 +2123,7 @@ body {
           left: 0;
           margin: auto;
           box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+          cursor: pointer;
           img {
             width: 100%;
             height: 100%;

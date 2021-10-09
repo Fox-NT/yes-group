@@ -477,6 +477,10 @@ body {
 }
 .header .menu__link {
   color: #fff;
+  transition: 0.2s color;
+}
+.header .menu__link:hover {
+  color: #226DE5;
 }
 .header .contacts {
   display: flex;
@@ -500,6 +504,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header .contacts__mobile a, .header .contacts__email a {
+  transition: 0.2s color;
+}
+.header .contacts__mobile a:hover, .header .contacts__email a:hover {
+  color: #226DE5;
 }
 .header .contacts__mobile::before {
   content: "";
@@ -530,9 +540,17 @@ body {
 }
 .header .contacts__social a {
   color: rgba(255, 255, 255, 0.33);
+  transition: 0.2s color;
+}
+.header .contacts__social a:hover {
+  color: #43d854;
 }
 .header .contacts__viber {
   margin-right: 15px;
+}
+.header .contacts__viber a:hover {
+  color: #665CAC;
+  transition: 0.2s color;
 }
 .header .burger {
   display: flex;
@@ -543,6 +561,7 @@ body {
   height: 90px;
   position: relative;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
 }
 .header .burger::before {
   position: absolute;
@@ -642,6 +661,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .slider .item .btn__link:hover {
+  background: linear-gradient(99.67deg, #164599 0%, #3668bb 98.59%);
+}
 .header .slider .item .btn__link::after {
   margin-left: 53px;
   content: "";
@@ -658,10 +680,20 @@ body {
 .header .slider .slider__control .slider__prev {
   order: 1;
   margin-right: 30px;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.header .slider .slider__control .slider__prev:hover svg g path {
+  fill: #0B5FFF;
 }
 .header .slider .slider__control .slider__next {
   order: 3;
   margin-left: 25px;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.header .slider .slider__control .slider__next:hover svg g path {
+  fill: #0B5FFF;
 }
 .header .slider .slider__control .slider__counter {
   order: 2;
@@ -2280,6 +2312,7 @@ body {
   left: 0;
   margin: auto;
   box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+  cursor: pointer;
 }
 .second-page .header .slider .item__play img {
   width: 100%;
