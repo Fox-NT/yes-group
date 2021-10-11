@@ -32,7 +32,6 @@
 		/* fix for flashing background */
 		-webkit-transform: translate3d(0px, 0px, 0px);
 	}
-
 	.owl-wrapper,
 	.owl-item{
 		-webkit-backface-visibility: hidden;
@@ -128,3 +127,5 @@
 .no-js .owl-carousel {
 	display: block;
 }
+
+

@@ -1113,6 +1113,9 @@ body {
   font-weight: 500;
   line-height: 23px;
 }
+.team__list .item__phone a, .team__list .item__mail a {
+  color: #020102;
+}
 .team__list .item__phone {
   margin-bottom: 5px;
 }
@@ -1475,8 +1478,8 @@ body {
 }
 .works__list .item__cover {
   z-index: 3;
-  width: 480px;
   height: 306px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -2822,6 +2825,16 @@ body {
   top: -55px;
   right: 140px;
   z-index: -1;
+}
+
+.feedback__list.owl-loaded {
+  height: 435px;
+  display: flex;
+}
+
+.feedback__list .owl-stage-outer {
+  overflow: unset;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

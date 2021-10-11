@@ -126,6 +126,16 @@
       padding-top: 41px;
     }
   }
+
+  .feedback__list {
+    &.owl-loaded {
+      height: 501px;
+    }
+  }
+  .feedback__list {
+    .owl-stage-outer {
+      margin-top: -100px;
+    }
 }
 @media screen and (max-width: 1160px) {
   .header {
@@ -1011,6 +1021,8 @@
           order: 1;
         }
       }
+    }
+
     }
   }
   @media screen and (max-width: 1160px) {

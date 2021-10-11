@@ -1316,6 +1316,9 @@ body {
   font-weight: 500;
   line-height: 23px;
 }
+.team__list .item__phone a, .team__list .item__mail a {
+  color: #020102;
+}
 .team__list .item__phone {
   margin-bottom: 5px;
 }
@@ -1678,8 +1681,8 @@ body {
 }
 .works__list .item__cover {
   z-index: 3;
-  width: 480px;
   height: 306px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -3027,6 +3030,16 @@ body {
   z-index: -1;
 }
 
+.feedback__list.owl-loaded {
+  height: 435px;
+  display: flex;
+}
+
+.feedback__list .owl-stage-outer {
+  overflow: unset;
+  height: auto;
+}
+
 @media screen and (max-width: 1330px) {
   .header .logo__image {
     width: 83px;
@@ -3133,8 +3146,16 @@ body {
     padding: 0 10px;
     padding-top: 41px;
   }
+
+  .feedback__list.owl-loaded {
+    height: 501px;
+  }
+
+  .feedback__list .owl-stage-outer {
+    margin-top: -100px;
+  }
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1280px) and (max-width: 1160px) {
   .header__container {
     background-color: #020102;
   }
@@ -3864,7 +3885,7 @@ body {
     line-height: 23.9px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1280px) and (max-width: 750px) {
   .header .slider .item__img::before {
     content: "";
     width: 100%;
@@ -3880,7 +3901,7 @@ body {
     clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1280px) and (max-width: 375px) {
   .footer__column {
     margin-right: 10px;
   }
@@ -3888,7 +3909,7 @@ body {
     margin-right: 0px;
   }
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 1280px) and (max-width: 355px) {
   .services__list {
     flex-direction: column;
     justify-content: flex-start;
@@ -3910,7 +3931,7 @@ body {
     padding-top: 84px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (max-width: 1280px) {
   .second-page .header .slider .item__play {
     right: 0;
   }
@@ -3940,109 +3961,112 @@ body {
     order: 1;
   }
 }
-@media screen and (max-width: 1160px) {
-  .second-page .header .slider .item__title {
+@media screen and (max-width: 1280px) and (max-width: 1160px) {
+  .header .slider .item__title {
     margin-bottom: 179px;
     font-size: 32px;
     line-height: 37.9px;
   }
-  .second-page .header .slider .item .btn__link {
+  .header .slider .item .btn__link {
     margin-bottom: 85px;
   }
-  .second-page .information {
+
+  .information {
     margin-top: -20px;
   }
-  .second-page .information .container {
+  .information .container {
     padding: 0 10px;
   }
-  .second-page .information__text--title h1 {
+  .information__text--title h1 {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 25px;
   }
-  .second-page .information__text--descr {
+  .information__text--descr {
     font-size: 14px;
     line-height: 25.9px;
   }
-  .second-page .calculate .container {
+
+  .calculate .container {
     padding: 0 10px;
   }
-  .second-page .calculate__title {
+  .calculate__title {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 35px;
   }
-  .second-page .calculate__options {
+  .calculate__options {
     overflow-y: auto;
     margin-bottom: 56px;
   }
-  .second-page .calculate__option {
+  .calculate__option {
     flex-shrink: 0;
   }
-  .second-page .calculate .calc__info {
+  .calculate .calc__info {
     align-items: flex-start;
   }
-  .second-page .calculate .calc__info--img {
+  .calculate .calc__info--img {
     width: 300px;
     height: 300px;
     margin-bottom: 27px;
   }
-  .second-page .calculate .calc__row--first, .second-page .calculate .calc__row--btn {
+  .calculate .calc__row--first, .calculate .calc__row--btn {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .second-page .calculate .calc__column--first {
+  .calculate .calc__column--first {
     margin-bottom: 20px;
   }
-  .second-page .calculate .calc__row--first .calc__input {
+  .calculate .calc__row--first .calc__input {
     width: 300px;
     margin-right: 0;
   }
-  .second-page .calculate .calc__row--first .calc__input #words {
+  .calculate .calc__row--first .calc__input #words {
     width: 300px;
   }
-  .second-page .calculate .calc__row--first .vv {
+  .calculate .calc__row--first .vv {
     width: 113px;
     margin-bottom: 17px;
   }
-  .second-page .calculate .calc__column {
+  .calculate .calc__column {
     margin-bottom: 29px;
   }
-  .second-page .calculate .calc__column .calc__row {
+  .calculate .calc__column .calc__row {
     width: 300px;
   }
-  .second-page .calculate .calc__column .calc__row select {
+  .calculate .calc__column .calc__row select {
     width: 300px;
   }
-  .second-page .calculate .calc__row--second .input__row {
+  .calculate .calc__row--second .input__row {
     width: 300px;
   }
-  .second-page .calculate .calc__row--second .input__row select {
+  .calculate .calc__row--second .input__row select {
     width: 300px;
   }
-  .second-page .price {
+
+  .price {
     padding-top: 71px;
     padding-bottom: 88px;
     margin-bottom: 40px;
   }
-  .second-page .price .container {
+  .price .container {
     padding: 0 10px;
   }
-  .second-page .price__text {
+  .price__text {
     margin-bottom: 40px;
   }
-  .second-page .price__text--title {
+  .price__text--title {
     font-size: 28px;
     font-weight: 600;
     line-height: 38px;
     color: #226DE5;
     margin-bottom: 18px;
   }
-  .second-page .price__text--title span {
+  .price__text--title span {
     color: #020102;
   }
-  .second-page .price__text--title::before {
+  .price__text--title::before {
     content: "";
     width: 54px;
     height: 5px;
@@ -4050,58 +4074,62 @@ body {
     display: block;
     margin-bottom: 27px;
   }
-  .second-page .price__text--descr {
+  .price__text--descr {
     font-size: 14px;
     line-height: 24px;
   }
-  .second-page .price__table {
+  .price__table {
     overflow-x: scroll;
   }
-  .second-page .price__table #price {
+  .price__table #price {
     min-width: 600px;
   }
 }
-@media screen and (max-width: 650px) {
-  .second-page .calculate {
+@media screen and (max-width: 1280px) and (max-width: 650px) {
+  .calculate {
     padding-top: 71px;
     padding-bottom: 38px;
   }
-  .second-page .calculate .calc__row--second {
+  .calculate .calc__row--second {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .second-page .calculate .calc__row--btn {
+  .calculate .calc__row--btn {
     align-items: center;
   }
-  .second-page .calculate .calc__row--btn .calc__price {
+  .calculate .calc__row--btn .calc__price {
     margin-bottom: 40px;
   }
-  .second-page .calculate .calc__row--btn .calc__send a {
+  .calculate .calc__row--btn .calc__send a {
     margin-right: 0px;
   }
-  .second-page .calculate .calc__column--second {
+  .calculate .calc__column--second {
     margin-right: 0px;
   }
-  .second-page .calculate .calc__column--first {
+  .calculate .calc__column--first {
     margin-right: 0px;
   }
-  .second-page .feedback {
+
+  .feedback {
     padding-bottom: 55px;
   }
-  .second-page .services {
+
+  .services {
     padding-top: 70px;
   }
-  .second-page .works {
+
+  .works {
     padding-top: 15px;
     margin-top: 0px;
   }
-  .second-page .question__up {
+
+  .question__up {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
-  .second-page .information {
+@media screen and (max-width: 1280px) and (max-width: 500px) {
+  .information {
     clip-path: polygon(0px 0px, 100% 4%, 100% 100%, 0px 100%);
   }
 }
