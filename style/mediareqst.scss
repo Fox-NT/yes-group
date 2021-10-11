@@ -43,7 +43,7 @@
   .header {
     .slider {
       .container {
-        padding: 0 10px;
+        padding: 0;
       }
     }
   }
@@ -158,7 +158,13 @@
       }
     }
     .slider {
+      margin-bottom: 0;
       .item {
+        .container {
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+
         &__title {
           font-size: 38px;
           line-height: 45.9px;
@@ -189,6 +195,7 @@
             width: 30px;
             height: 30px;
             margin-right: 28px;
+            cursor: pointer;
             svg {
               width: 30px;
               height: 30px;
@@ -198,6 +205,7 @@
           width: 30px;
           height: 30px;
             margin-left: 28px;
+            cursor: pointer;
           svg {
             width: 30px;
             height: 30px;
@@ -255,6 +263,7 @@
         width: 35px;
         height: 35px;
         flex-shrink: 0;
+        cursor: pointer;
         img {
           width: 100%;
           height: 100%;
@@ -329,6 +338,7 @@
           background-color: #C4C4C4;
           margin-right: 14px;
           border-radius: 50%;
+          cursor: pointer;
           &:nth-last-child(1) {
           margin-right: 0;
         }
@@ -490,6 +500,7 @@
         background-color: #C4C4C4;
         margin-right: 14px;
         border-radius: 50%;
+        cursor: pointer;
         &:nth-last-child(1) {
           margin-right: 0;
         }
@@ -513,11 +524,11 @@
     &__head {
       &--btn {
         position: absolute;
-        bottom: -474px;
+        bottom: -547px;
       }
     }
     &__list {
-      margin-top: -75px;
+      //margin-top: -75px;
       height: 501px;
       .item {
         width: 300px;
@@ -533,9 +544,12 @@
     &__dots {
       display: flex;
       justify-content: center;
-      margin-top: -82px;
+      margin-top: -87px;
+
       margin-bottom: 169px;
+      z-index: 500;
       .dot {
+        cursor: pointer;
         display: block;
         width: 7px;
         height: 7px;
@@ -686,6 +700,8 @@
     &__dots {
       display: flex;
       justify-content: center;
+      position: relative;
+      top: 50px;
       .dot {
         display: block;
         width: 7px;
@@ -693,6 +709,7 @@
         background-color: #C4C4C4;
         margin-right: 14px;
         border-radius: 50%;
+        cursor: pointer;
         &:nth-last-child(1) {
           margin-right: 0;
         }
@@ -761,6 +778,13 @@
         display: none;
       }
     }
+    &__info {
+      display: none;
+      &:nth-child(1) {
+        display: flex;
+      }
+    }
+
     &__info {
       justify-content: center;
       flex-direction: column;
@@ -896,16 +920,20 @@
             content: '';
             width: 100%;
             height: 100%;
-            top: 50px;
+            //top: 157px;
             left: 0;
+            top: 0;
             display: block;
             position: absolute;
             background: linear-gradient(116.78deg, rgba(3, 3, 3, 0.64) 170.9%, rgba(3, 3, 3, 0) 253.37%);
-            mask-image: url("../img/bg-header.png");
+            //mask-image: url("../img/bg-header.png");
           }
         }
       }
     }
+  }
+  .about {
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
   }
 }
 @media screen and (max-width: 375px) {
@@ -1003,6 +1031,7 @@
       }
     }
     .information {
+      margin-top: -20px;
       .container {
         padding: 0 10px;
       }
@@ -1189,6 +1218,11 @@
       &__up {
         display: none;
       }
+    }
+  }
+  @media screen and (max-width: 500px){
+    .information {
+      clip-path: polygon(0px 0px, 100% 4%, 100% 100%, 0px 100%);
     }
   }
 }
